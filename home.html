@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> Home Page</title>
+<link rel="stylesheet" type="text/css" href="/cssFiles/home.css">
+</head>
+
+<body onload="showUp()">
+
+<div id="ad_container"><a href="about.html">
+
+<img class="adpicture" src="./images/foodtrans.png">
+<img class="adpicture" src="./images/foodsample2.jpg">
+
+<div class="wording"> You order,<br/> We deliver!</div>
+</a>
+<div id="closeButton" onclick="closeButton()"> </div>
+ 
+</div>
+<hr/>
+
+<p id="foo"><a href="index.html"><img src="./images/foodarlogo.png" 
+          alt="foodarlogo" style="width:50px;height:60px;"/></a> Muhili</p>
+
+<ul id="register"> 
+<li> <a class="signup" href="/signout"> Sign out</a></li>
+<li class="signup">/</li>
+<li> <a class="signup" href="/request.html"> Request</a></li>
+<!--<li class="signup">/</li>
+<li> <a class="signup" href="/register.html"> Register</a></li>  -->
+ <br/>
+
+</ul>
+
+<div class="food1">
+<img src="./images/foodsample3.jpg" alt="food sample" style="width:100%;height:400px;"/>
+<div id="imagetext"> We deliver fast!</div>
+</div>
+
+
+<section id="finder">
+<p class="nearcity"> Find a driver near you!</p>
+<p class="instruct"> Type in your zipcode below and and click Go! to find a driver near you.
+	Hint: zipcodes 31419,31406,31409,31405.
+</p>
+<input class="yourzip" id="yourzip" type="number" max="5" />
+<input class="go" type="submit" value="Go!" onclick="search()"/>
+<p id="dummy"> </p>
+<p id="check_validity"> </p>
+</section>
+
+
+
+<footer>
+    <div id="overall">
+	    <div class="left_footer">
+	   <span id="smap"> site map</span>
+	   <ul>
+	     <li><a class="round" href="/index.html"> Home</a></li>
+		 <li><a class="round" href="/register.html"> Register </a></li>
+		 <li><a class="round" href="/about.html"> About Us</a></li>
+	     </ul>
+		</div>
+		
+		<div class="middle_footer">
+		<span id="law"> legal</span>
+		 <ul>
+		   <li>Privacy Policy</li>
+		   <li> Terms & Conditions</li>
+		   </ul>
+		 </div>
+		
+		<div class="right_footer">
+		<span id="ask"> Enquiries</span>
+		 <ul>
+		   <li>Email: muhilik@yahoo.com</li>
+		   <li> Phone Number:</li>
+		   </ul>
+		</div>
+		
+	      <section id="myright">
+		  
+		  <p>&copy; 2019. All rights rserved. </p>
+		  
+		  
+		 </section>
+	</div>  
+
+      
+</footer>	
+
+<script src="/js/functions.js"></script>
+
+</body>
+
+
+</html>

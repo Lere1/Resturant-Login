@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Request Page</title>
+<link rel="stylesheet" type="text/css" href="/cssFiles/request.css">
+
+</head>
+
+<body>
+
+<p id="foo"><a href="index.html"><img src="./images/foodarlogo.png" 
+           alt="foodarlogo" style="width:50px;height:60px;"/></a> Muhili</p>
+
+<p id="request"> submit your request</p>
+<hr/>
+<section class="requestbody">
+<p> Please fill out the form below.</p>
+<p> Address:</p>
+<input id="e-mail" type="text" name="ename" placeholder="email">
+
+<p id="style"> Choose your style:</p>
+<div id="classic">
+<p>Classic</p> This is a classic treatment <br/><br/><input class="food-price" type="radio" name="style" value="3" onclick="getTotal()"> 
+</div>
+<div id="premium">
+<p>Premium</p> Pinky's up <br/><br/><input class="food-price" type="radio" name="style" value="5" onclick="getTotal()">
+</div> 
+<div id="royal">
+<P>Royal</p> Your food is served on a silver platter literally<br/> <input class="food-price" type="radio" name="style" value="10" onclick="getTotal()">
+</div> 
+
+<p> Resturant:</p>
+<input type="text" name="rname" placeholder="Name">
+
+<p id="tip"> Tip: </p>
+<div class="ten">
+<p> 10%</p>They did their job <br/><br/><input class="food-tip" type="radio" name="tip" value="10" onclick="getTotal()"> 
+</div>
+<div class="fifteen">
+<p> 15%</p>They made you feel special <br/><br/><input class="food-tip" type="radio" name="tip" value="15" onclick="getTotal()"> 
+</div>
+<div class="twenty">
+<p> 20%</p>I wanna give them more, but this is all I have!<br/>  <input class="food-tip" type="radio" name="tip" value="20" onclick="getTotal()">
+</div>
+
+<p id="gross"> Total: $ <span id="total"></span> </p>
+<input id="submitrequest" type="submit" value="REQUEST">
+</section>
+
+
+<footer>
+    <div id="overall">
+	    <div class="left_footer">
+	   <span id="smap"> site map</span>
+	   <ul>
+	     <li><a href="home.html"> Home</a></li>
+		 <li><a href="register.html"> Register </a></li>
+		 <li><a href="about.html"> About Us</a></li>
+	     </ul>
+		</div>
+		
+		<div class="middle_footer">
+		<span id="law"> legal</span>
+		 <ul>
+		   <li>Privacy Policy</li>
+		   <li> Terms & Conditions</li>
+		   </ul>
+		 </div>
+		
+		<div class="right_footer">
+		<span id="ask"> Enquiries</span>
+		 <ul>
+		   <li>Email: muhilik@yahoo.com</li>
+		   <li> Phone Number:</li>
+		   </ul>
+		</div>
+		
+	      <section id="myright">
+		  
+		  <p>&copy; 2019. All rights rserved. </p>
+		  
+		  
+		 </section>
+	</div>  
+
+      
+</footer>	
+
+
+<script src="/js/functions.js"></script>
+
+</body>
+
+</html>
